@@ -12,6 +12,7 @@
 		014758831CC85E8400E7EF37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014758811CC85E8400E7EF37 /* Main.storyboard */; };
 		014758851CC85E8400E7EF37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014758841CC85E8400E7EF37 /* Assets.xcassets */; };
 		014758881CC85E8400E7EF37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014758861CC85E8400E7EF37 /* LaunchScreen.storyboard */; };
+		018525091CD98EE600E79934 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018525081CD98EE600E79934 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		014758841CC85E8400E7EF37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		014758871CC85E8400E7EF37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		014758891CC85E8400E7EF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		018525081CD98EE600E79934 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				014758841CC85E8400E7EF37 /* Assets.xcassets */,
 				014758861CC85E8400E7EF37 /* LaunchScreen.storyboard */,
 				014758891CC85E8400E7EF37 /* Info.plist */,
+				018525081CD98EE600E79934 /* HistoryViewController.swift */,
 			);
 			path = "simple-calc";
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018525091CD98EE600E79934 /* HistoryViewController.swift in Sources */,
 				014758801CC85E8400E7EF37 /* ViewController.swift in Sources */,
 				0147587E1CC85E8400E7EF37 /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +291,7 @@
 				0147588E1CC85E8400E7EF37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

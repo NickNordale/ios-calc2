@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var history = [String]()
+    var currEq = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +34,9 @@ class ViewController: UIViewController {
         if newEq {
             num = ""
             newEq = false
+            currEq = ""
         }
+        currEq += sender.currentTitle! + " "
         num += sender.currentTitle!
         ans.text = num
     }
@@ -40,6 +45,7 @@ class ViewController: UIViewController {
         if op != "" && op != sender.currentTitle! {
             ans.text = "ERROR: mismatch operations"
         } else {
+            currEq += sender.currentTitle! + " "
             intArr.append(Int(num)!)
             num = ""
             ans.text = sender.currentTitle!
@@ -85,6 +91,9 @@ class ViewController: UIViewController {
                 ans.text = "error"
             }
         }
+        currEq += "= " + ans.text!
+        history.append(currEq)
+        currEq = ans.text! + " "
         newEq = true
         num = ans.text!
         op = ""
@@ -97,6 +106,12 @@ class ViewController: UIViewController {
         intArr.removeAll()
         newEq = true
         ans.text = "0"
+        currEq = ""
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let next : HistoryViewController = segue.destinationViewController as! HistoryViewController
+        next.history = history
     }
 }
 
